@@ -20,14 +20,15 @@ Full adder is a digital circuit used to calculate the sum of three binary bits. 
 
 Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin Carry = AB + ACin + BCin
 
+#### Figure -01 HALF ADDER 
  ![image](https://user-images.githubusercontent.com/36288975/163552156-a13e5a56-c638-4110-97d9-8896907c8d25.png)
 
-#### Figure -01 HALF ADDER 
 
+#### Figure -02 FULL ADDER 
 
 ![image](https://user-images.githubusercontent.com/36288975/163552057-b3547877-6d07-45b4-b7e0-bcfebfad9e1d.png)
 
-#### Figure -02 FULL ADDER 
+
 
 ### Procedure
 
@@ -74,10 +75,23 @@ RTL realization
 
 ### Output:
 ### RTL
-### TIMING DIAGRAM
+### HALF ADDER
+![half_adder_RTL](https://user-images.githubusercontent.com/91368803/232842428-9b75e15d-4c37-4e72-896a-4be6e1d6e2e7.png)
+### FULL ADDER
+![full adder_RTL](https://user-images.githubusercontent.com/91368803/232842480-01beb893-bd2f-4b7a-bd16-45ce370f6f63.png)
 
+### TIMING DIAGRAM
+### HALF ADDER
+![half_adder waveform](https://user-images.githubusercontent.com/91368803/232842570-617d5c78-c408-4a2f-ae52-127110879237.png)
+
+### FULL ADDER
+![full_adder waveform](https://user-images.githubusercontent.com/91368803/232842583-f8b82047-4216-42f8-809b-d6034d2c8e0e.png)
 
 ### TRUTH TABLE 
+### HALF ADDER
+![Half-adder-Truth-Table](https://user-images.githubusercontent.com/91368803/232842675-531560c1-a798-41cb-b189-cd59c43b3651.png)
+### FULL ADDER
+![Full-adder-Truth-Table](https://user-images.githubusercontent.com/91368803/232842712-081d34ed-edd7-481e-822e-4c72734ea33b.png)
 
 ### Result:
 Thus the output of half_adder and full_adder experiment successfully achieved.
