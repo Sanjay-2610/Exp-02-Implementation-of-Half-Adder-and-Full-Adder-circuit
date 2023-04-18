@@ -1,6 +1,6 @@
 # Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit
 
-# Implementation-of-Half-Adder-and-Full-Adder-circuit
+## Implementation-of-Half-Adder-and-Full-Adder-circuit
 ### AIM:
 To design a half adder and full adder circuit and verify its truth table in Quartus using Verilog programming.
 
@@ -34,13 +34,41 @@ Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin Carry = A
 Connect the supply (+5V) to the circuit
 Switch ON the main switch
 If the output is 1, then the led glows.
-### 
-Program:
+### Program:
+### Half Adder
+```
 /*
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: Sanjay Ragavendar Ragavendar
+RegisterNumber:  212222100045
 */
+
+module half_adder(a,b,sum,carry);
+input a,b;
+output sum,carry;
+xor(sum,a,b);
+and(carry,a,b);
+endmodule
+```
+### Full Adder
+```
+/*
+Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
+Developed by: Sanjay Ragavendar Ragavendar
+RegisterNumber:  212222100045
+*/
+
+module full_adder(x,y,z,s,c);
+input x,y,z;
+output s,c;
+wire x1,x3,x4;
+xor(x1,x,y);
+xor(s,x1,z);
+and(x3,x,y);
+and(x4,x,y);
+or(c,x3,x4);
+endmodule
+```
 Logic symbol & Truthtable
 RTL realization
 
@@ -52,3 +80,4 @@ RTL realization
 ### TRUTH TABLE 
 
 ### Result:
+Thus the output of half_adder and full_adder experiment successfully achieved.
